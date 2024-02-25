@@ -1,0 +1,50 @@
+.wrapper {
+	padding: 2rem;
+}
+
+.ferry_container {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5px;
+	flex-wrap: wrap;
+}
+
+.ferry_container > div {
+	padding-inline: 1rem;
+}
+
+.ferry_container > div h3 {
+	color: #495057;
+}
+
+.ferry_container > div:last-child {
+	border: none;
+}
+
+.ferry_container > div > div {
+	display: flex;
+	align-items: center;
+}
+.input_container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.input_container > div {
+	display: flex;
+	align-items: center;
+}
+
+.input_container span {
+	margin-right: 0.5rem;
+}
+
+.button_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

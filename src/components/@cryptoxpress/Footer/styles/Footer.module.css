@@ -1,0 +1,26 @@
+.menu {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	display: flex;
+}
+
+.menu>a {
+	/* text-transform: uppercase; */
+	color: white;
+	font-size: 14px;
+}
+
+.menu>a:hover {
+	color: #046873;
+}
+
+/* @media (min-width: 1024px) {
+	.menu {
+		display: flex;
+	}
+} */
+.footerLink a{
+	color:"#fff";
+}

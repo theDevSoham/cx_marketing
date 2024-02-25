@@ -1,0 +1,30 @@
+/* src/Hero.css */
+.HeroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    text-align: center;
+    /* background:  linear-gradient(180deg, rgba(24,68,141,1) 0%, rgba(26,54,88,1) 100%); */
+    background: linear-gradient(207.59deg, #18448D -10.97%, #1A3658 72.69%);
+    position: relative; /* Needed for overlay positioning */
+  }
+  
+  .HeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 31, 77, 0) 24.74%, #111F30 64.9%);
+    z-index: 1; /* Ensure overlay is between the background and content */
+  }
+  
+  .HeroContent {
+    position: relative;
+    color: white;
+    z-index: 2; /* Ensure content is above the overlay */
+    /* Additional styling as needed */
+  }
+  

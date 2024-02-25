@@ -1,0 +1,52 @@
+/* xs */
+@media (max-width: 575px) {
+	.crypto_easy_text {
+		font-weight: 900;
+		font-size: 30px;
+		color: #18448d;
+	}
+
+	.card_container {
+		padding: 2rem;
+	}
+}
+
+/* sm */
+@media (min-width: 576px) {
+	.crypto_easy_text {
+		font-weight: 900;
+		font-size: 30px;
+		color: #18448d;
+	}
+
+	.card_container {
+		padding: 2rem;
+	}
+}
+
+/* md */
+@media (min-width: 768px) {
+	.crypto_easy_text {
+		font-weight: 900;
+		font-size: 40px;
+		color: #18448d;
+	}
+
+	.card_container {
+		padding: 4rem;
+	}
+}
+
+
+/* lg */
+@media (min-width: 992px) {
+	.crypto_easy_text {
+		font-weight: 900;
+		font-size: 60px;
+		color: #18448d;
+	}
+
+	.card_container {
+		padding: 5rem;
+	}
+}

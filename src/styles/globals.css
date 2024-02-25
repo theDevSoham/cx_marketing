@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family:
+		-apple-system,
+		BlinkMacSystemFont,
+		Segoe UI,
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		Fira Sans,
+		Droid Sans,
+		Helvetica Neue,
+		sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* chart specific css */
+.chart-container {
+	position: relative; /* Ensure the chart container is relative for positioning the tooltip */
+}
+
+.line {
+	fill: none;
+	stroke: #41c3a9; /* Corrected comment to match the actual color - teal */
+	stroke-width: 2px;
+}
+
+.area {
+	fill: #c9eee7; /* Corrected comment to accurately describe the color - pale teal */
+}
+
+.tooltip {
+	position: absolute;
+	padding: 10px;
+	background-color: steelblue;
+	color: white;
+	border: 1px solid white;
+	border-radius: 10px;
+	display: none;
+	opacity: 0.75;
+}
+
+.logo {
+	opacity: 1;
+}
+
+@media (min-width: 1024px) {
+	.logo {
+		opacity: 1;
+	}
+}
+
+.custom_card:hover {
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+	transition: box-shadow 0.2s,border-color 0.2s;
+}
+
+.ant-table-cell {
+	background: #fff !important;
+}
+
+.search-bar input {
+	background: #f4f5f9 !important;
+}
+
+.cx_collapse_container .ant-collapse-header {
+	flex-direction: row-reverse;
+}

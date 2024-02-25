@@ -1,0 +1,118 @@
+.wrapper {
+	padding: 2rem;
+}
+
+.details_container {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.left_container {
+	max-width: 40%;
+}
+
+.left_container img {
+	width: 100%;
+}
+
+.right_container h2 {
+	font-size: 1rem;
+	color: #444;
+	font-weight: normal;
+	margin: 0;
+}
+
+.right_container h3 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: rgb(72, 72, 72);
+}
+
+.location_container {
+	display: flex;
+	background-color: rgb(29, 98, 177);
+	align-items: center;
+	padding: 1rem;
+	color: white;
+}
+
+.location_container > div {
+	width: 50%;
+	padding-inline: 1rem;
+}
+
+.location_container p,
+.location_container h4 {
+	margin: 0;
+}
+
+.location_container h4 {
+	font-weight: 500;
+}
+
+.location_container p span {
+	font-weight: 500;
+}
+
+.location_container > div:nth-child(1) {
+	border-right: 1px solid white;
+}
+
+.description h1 {
+	font-weight: normal;
+	color: #444;
+}
+
+.description p {
+	color: rgb(72, 72, 72);
+}
+
+.details span {
+	font-weight: bold;
+}
+
+.details p {
+	margin-block: 0.25rem;
+	color: #444;
+}
+
+.details > div:nth-child(1) {
+	border-bottom: 1px solid #444;
+	padding-bottom: 2rem;
+}
+
+.contact_details > div {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	margin-block: 1rem;
+}
+
+.contact_details > div > div {
+	width: 50%;
+}
+
+.contact_details input {
+	width: 100%;
+	margin-top: 0.5rem;
+}
+
+.guest_details {
+	display: flex;
+	gap: 1rem;
+}
+
+.guest_details span {
+	margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+	.details_container {
+		flex-direction: column;
+	}
+
+	.left_container {
+		max-width: 100%;
+	}
+}

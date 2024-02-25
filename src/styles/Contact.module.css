@@ -1,0 +1,23 @@
+.wrapper {
+	padding: 2rem;
+	max-width: 80%;
+	margin-inline: auto;
+}
+
+.contact_details {
+	display: flex;
+}
+
+.contact_details > div {
+	width: 50%;
+}
+
+.contact_details > div input,
+.contact_details > div > div {
+	margin-bottom: 1rem;
+}
+
+.contact_details > div > h2 {
+	font-weight: normal;
+	color: #444;
+}

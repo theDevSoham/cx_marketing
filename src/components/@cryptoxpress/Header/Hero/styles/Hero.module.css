@@ -1,0 +1,152 @@
+.fade_in_rotate {
+  opacity: 0;
+  transform: translateY(10rem) rotate(5deg);
+  transform-origin: left center; /* Specifies rotation origin at left side */
+  animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
+  -webkit-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
+  -moz-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
+  -o-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
+  -ms-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
+}
+
+.fade_in {
+  opacity: 0;
+  transform: translateY(10rem);
+  transform-origin: left center; /* Specifies rotation origin at left side */
+  animation: fadeIn ease 0.7s 0.5s forwards, opaque 0.7s forwards;
+  -webkit-animation: fadeIn ease 0.7s 0.5s forwards, opaque 0.7s forwards;
+  -moz-animation: fadeIn ease 0.7s 0.5s forwards, opaque 0.7s forwards;
+  -o-animation: fadeIn ease 0.7s 0.5s forwards, opaque 0.7s forwards;
+  -ms-animation: fadeIn ease 0.7s 0.5s forwards, opaque 0.7s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInExtreme {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+.HeroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+    text-align: center;
+    background-color: #18448D; /* Example background color */
+    position: relative; /* Needed for overlay positioning */
+  }
+  
+  .HeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 31, 77, 0.00) 24.74%, #111F30 64.9%); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure overlay is between the background and content */
+  }
+  
+  .HeroContent {
+    position: relative;
+    color: white;
+    z-index: 2; /* Ensure content is above the overlay */
+    /* Additional styling as needed */
+  }
+
+  /* antd media */
+
+/* xs */
+@media (max-width: 575px) {
+  .logo {
+    max-width: 100px;
+  }
+
+  .text {
+    margin-bottom: 42px;
+    font-size: 30px;
+  }
+
+  .sub_text {
+    font-size: 16px;
+  }
+
+  .button_img {
+    max-width: 130px;
+  }
+}
+
+/* sm */
+@media (min-width: 576px) {
+  .logo {
+    max-width: 150px;
+  }
+
+  .text {
+    margin-bottom: 52px;
+    font-size: 35px;
+  }
+
+  .sub_text {
+    font-size: 18px;
+  }
+
+  .button_img {
+    max-width: 150px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .logo {
+    max-width: 200px;
+  }
+
+  .text {
+    margin-bottom: 62px;
+    font-size: 55px;
+  }
+
+  .sub_text {
+    font-size: 22px;
+  }
+
+  .button_img {
+    max-width: 200px;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .logo {
+    max-width: 200px;
+  }
+
+  .text {
+    margin-bottom: 62px;
+    font-size: 55px;
+  }
+
+  .sub_text {
+    font-size: 22px;
+  }
+
+  .button_img {
+    max-width: 200px;
+  }
+}
+  

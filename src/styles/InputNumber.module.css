@@ -1,0 +1,6 @@
+.override_controller_opacity :global(.ant-input-number-handler-wrap){
+opacity:1
+}
+.override_input_addon_padding :global(.ant-input-group-addon){
+    padding: 0 !important
+}
