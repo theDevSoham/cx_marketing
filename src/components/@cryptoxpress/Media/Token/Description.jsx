@@ -3,10 +3,9 @@
 import LayoutStyles from "@styles/Layout.module.css";
 import Graph from "./Graph";
 import { useState, useEffect, useRef } from "react";
-import { Grid } from "antd";
+import { Row, Col } from "antd";
 const Description = () => {
 	const chartParent = useRef(null);
-	const { md, xs } = Grid.useBreakpoint();
 
 	const [width, setWidth] = useState(0);
 	const [height, setHeight] = useState(0);

@@ -118,7 +118,7 @@ export default function PlanYourPerfectTrip() {
 							xl={12}
 							style={{ textAlign: "left" }}
 						>
-							<h1 style={{ marginBottom: "10px", fontSize: lg ? "32px" : sm ? "16px" : "16px" }}> Plan Your Perfect Trip </h1>
+							<h1 style={{ fontSize: lg ? "32px" : sm ? "16px" : "16px" }}> Plan Your Perfect Trip </h1>
 						</Col>
 						<Col
 							xs={12}
@@ -135,19 +135,19 @@ export default function PlanYourPerfectTrip() {
 								/>
 							</Flex>
 						</Col>
-                        <Col
-                            xs={24}
+						<Col
+							xs={24}
 							sm={24}
 							md={12}
 							lg={12}
 							xl={12}
 							style={{ textAlign: lg || md ? "left" : "center", fontSize: lg ? "20px" : sm ? "16px" : "16px" }}
-                        >
-                            <p style={{ fontWeight: lg ? "200" : sm ? "300" : "400", color: "#595D62" }}>
+						>
+							<p style={{ fontWeight: lg ? "200" : sm ? "300" : "400", color: "#595D62" }}>
 								Search flights & accommodation to the worlds most popular
 								destinations.
 							</p>
-                        </Col>
+						</Col>
 					</Row>
 				</div>
 			</div>
