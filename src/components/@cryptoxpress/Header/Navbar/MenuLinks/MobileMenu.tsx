@@ -14,7 +14,8 @@ const Navbar = () => {
 		{ label: "NFTs", key: "nfts", href: "https://nft.cryptoxpress.com" },
 		{ label: "Trade", key: "trade", href: "#" },
 		{ label: "XPRESS Token", key: "xpress", href: "/xpress" },
-		{ label: "contact", key: "contact", href: "/contact-us" }
+		{ label: "About", key: "about", href: "/about" },
+		{ label: "Contact", key: "contact", href: "/contact-us" }
 	];
 
 	return (

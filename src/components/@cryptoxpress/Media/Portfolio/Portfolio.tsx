@@ -25,8 +25,6 @@ import moment from "moment";
 const { CheckableTag } = Tag;
 
 const CX_BINANCE_BASE_URL = "https://bwsp.s1.cryptoxpress.com";
-const BEARER_TOKEN =
-	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTY4MCwiaWF0IjoxNzA4ODQ1ODc1LCJleHAiOjE3MTE0Mzc4NzV9.OPPZtE5e2FmS6PDYBA_eLOGxGSxh8ODe4MzX08LSf3c";
 
 const HIGHLIGHT_COINS = [
 	"XPRESS",
@@ -75,6 +73,9 @@ const TREND_COINS = ["BTC", "ETH", "BNB", "USDT"];
 
 const CMC_XPRESS_ID = 13251;
 
+const BEARER_TOKEN =
+	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTY4MCwiaWF0IjoxNzA4ODQ1ODc1LCJleHAiOjE3MTE0Mzc4NzV9.OPPZtE5e2FmS6PDYBA_eLOGxGSxh8ODe4MzX08LSf3c";
+
 export default function BookHolidays() {
 	const [priceTickers, setPriceTickers] = React.useState({});
 	const [fiatCoins, setFiatCoins] = React.useState({});
@@ -92,37 +93,37 @@ export default function BookHolidays() {
 	const [tagsData, setTagsData] = React.useState([
 		{
 			title: "Popular",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: true
 		},
 		{
 			title: "Metaverse",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: false
 		},
 		{
 			title: "Entertainment",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: false
 		},
 		{
 			title: "Energy",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: false
 		},
 		{
 			title: "Gaming",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: false
 		},
 		{
 			title: "Music",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: false
 		},
 		{
 			title: "See All 12+",
-			onTagClick: () => {},
+			onTagClick: () => { },
 			checked: false
 		}
 	]);
@@ -138,12 +139,12 @@ export default function BookHolidays() {
 			responsive: ["lg"]
 		},
 		{
-			title: "Name",
+			title: "Symbol",
 			dataIndex: "symbol",
 			key: "symbol"
 		},
 		{
-			title: "",
+			title: "Name",
 			dataIndex: "name",
 			key: "name"
 		},
@@ -401,8 +402,6 @@ export default function BookHolidays() {
 				_coinInfoSanitized.push(coin);
 			}
 
-			console.log("Coin info sanitized: ", _coinInfoSanitized.length);
-
 			if (_coinInfoSanitized.length > 0) setLoading(false);
 
 			// Sort alphabetically
@@ -557,9 +556,9 @@ export default function BookHolidays() {
 						return {
 							key: String(
 								index +
-									1 +
-									DEX_COINS.length +
-									Object.keys(dexPairsPrices).length
+								1 +
+								DEX_COINS.length +
+								Object.keys(dexPairsPrices).length
 							),
 							no:
 								index +
@@ -730,7 +729,7 @@ export default function BookHolidays() {
 						</p>
 					</div>
 				</div>
-				{false ? (
+				{loading ? (
 					<Row justify="center" align="middle">
 						<Spin size="large" />
 					</Row>

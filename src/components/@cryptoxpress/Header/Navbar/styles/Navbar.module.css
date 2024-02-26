@@ -1,39 +1,40 @@
 .nav_container_broad {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 12px 1rem;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 12px 1rem;
 }
 
-.cx_blue_bg{
+.cx_blue_bg {
 	background-color: #18448D;
 }
-.white_text{
-	color:#fff;
+
+.white_text {
+	color: #fff;
 }
 
 
 @media (min-width: 576px) {
-    .nav_container_broad {
-        max-width: 576px;
-    }
+	.nav_container_broad {
+		max-width: 576px;
+	}
 }
 
 @media (min-width: 768px) {
-    .nav_container_broad {
-        max-width: 768px;
-    }
+	.nav_container_broad {
+		max-width: 768px;
+	}
 }
 
 @media (min-width: 992px) {
-    .nav_container_broad {
-        max-width: 992px;
-    }
+	.nav_container_broad {
+		max-width: 992px;
+	}
 }
 
 @media (min-width: 1200px) {
-    .nav_container_broad {
-        max-width: 1400px;
-    }
+	.nav_container_broad {
+		max-width: 1400px;
+	}
 }
 
 .nav_bar_container {
@@ -41,8 +42,8 @@
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
 }
 
 .nav_top_right {

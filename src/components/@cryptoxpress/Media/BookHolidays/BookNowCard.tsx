@@ -8,7 +8,7 @@ const BookNowCard = ({
 	title = "",
 	text = "",
 	buttonText = "",
-	buttonClick = () => {}
+	buttonClick = () => { }
 }) => {
 	return (
 		<div
@@ -47,9 +47,9 @@ const BookNowCard = ({
 				style={{
 					width: "100%",
 					height: "100%",
-					paddingBottom: 20
+					paddingBottom: 40
 				}}
-				gap={10}
+				gap={6}
 			>
 				<p
 					style={{
@@ -58,7 +58,6 @@ const BookNowCard = ({
 						color: "#FFFFFF"
 					}}
 					className={styles.header}
-					
 				>
 					{title}
 				</p>
@@ -66,7 +65,8 @@ const BookNowCard = ({
 					style={{
 						fontWeight: "400",
 						textAlign: "center",
-						color: "#FFFFFF"
+						color: "#FFFFFF",
+						paddingBottom: "10px"
 					}}
 					className={styles.subHeader}
 				>
@@ -76,6 +76,9 @@ const BookNowCard = ({
 					<Button
 						type="primary"
 						style={{
+							// padding: "20px 0",
+							paddingTop: "5px",
+							paddingBottom: "30px",
 							backgroundColor: "#F29557",
 							textTransform: "capitalize",
 							fontWeight: "700",
@@ -84,6 +87,7 @@ const BookNowCard = ({
 						onClick={buttonClick}
 					>
 						{buttonText}
+
 					</Button>
 				</Row>
 			</Flex>

@@ -19,7 +19,7 @@ export default function SummaryCard({
 	// const price = "50,000";
 	// const priceChangePercent = "1.04%";
 	return (
-		<Card>
+		<Card style={{ borderRadius: "15px" }}>
 			<Row>
 				<Col xs={4} md={4} lg={4}>
 					<BitcoinLogo

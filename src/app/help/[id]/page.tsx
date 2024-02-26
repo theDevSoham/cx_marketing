@@ -1,13 +1,17 @@
 "use client";
 import React from "react";
 import { useParams } from "next/navigation";
+import Navbar from "@components/@cryptoxpress/Header/Navbar";
 
 const HelpId = () => {
 	const { id } = useParams();
 	return (
-		<div>
-			<p>Help id: {id}</p>
-		</div>
+		<>
+			<Navbar />
+			<div>
+				<p>Help id: {id}</p>
+			</div>
+		</>
 	);
 };
 

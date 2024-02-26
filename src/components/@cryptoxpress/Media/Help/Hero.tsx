@@ -20,7 +20,7 @@ const HelpCard = ({ text, description }) => {
 				</Col>
 				<Col span={2}>
 					{" "}
-					<RightCircleOutlined style={{ color: "#95F1D5", fontSize: "18px" }} />
+					<RightCircleOutlined style={{ color: "#95F1D5" }} />
 				</Col>
 			</Row>
 		</Card>
@@ -42,6 +42,7 @@ export default function Hero() {
 				align="middle"
 				justify="space-around"
 				gutter={16}
+				className="search-bar" /* for overriding antd style */
 			>
 				<Col xs={0} sm={0} md={20} lg={20}>
 					<Input
@@ -72,19 +73,22 @@ export default function Hero() {
 						{"Search"}
 					</button>
 				</Col>
-				<Col xs={20} sm={20} md={0} lg={0}>
-					<Input
+				<Col xs={24} sm={24} md={0} lg={0}>
+					<Input.Search
+						enterButton={
+							<Button
+								type="primary"
+								style={{
+									backgroundColor: "#18448D"
+								}}
+								icon={<SearchOutlined />}
+								shape="round"
+							/>
+						}
 						placeholder="Search help center articles"
-						style={{
-							width: "100%",
-							padding: "10px",
-							borderRadius: "8px",
-							backgroundColor: "#f4f5f9",
-							border: "0"
-						}}
 					/>
 				</Col>
-				<Col xs={4} sm={4} md={0} lg={0}>
+				{/* <Col xs={4} sm={4} md={0} lg={0}>
 					<button
 						style={{
 							padding: "10px",
@@ -98,11 +102,11 @@ export default function Hero() {
 					>
 						<SearchOutlined />
 					</button>
-				</Col>
+				</Col> */}
 			</Row>
 			<div style={{ margin: "50px 0" }}></div>
 
-			<Row gutter={[16, 16]}>
+			<Row gutter={[16, 16]} style={{ marginLeft: 0, marginRight: 0 }}>
 				<Col lg={8} md={12} sm={24} xs={24}>
 					<HelpCard text="Introduction" description="lorem ipsum lorem ipsum" />
 				</Col>

@@ -10,6 +10,7 @@ const DesktopMenu = () => {
 			<MenuDropdown />
 			<Link href="#">Trade</Link>
 			<Link href="/xpress">XPRESS Token</Link>
+			<Link href="/about">About</Link>
 			<Link href="/contact-us">Contact us</Link>
 		</div>
 	);

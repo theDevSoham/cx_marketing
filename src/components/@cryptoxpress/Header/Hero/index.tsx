@@ -90,7 +90,7 @@ export default function Hero({ children }) {
 					}}
 					className={styles.button_img}
 					src="/assets/images/badge/2x/get-it-on-google-play-store.png"
-					alt="Download CryptoXpress mobile app on Apple App Store"
+					alt="Download CryptoXpress mobile app on Google Play Store"
 					onClick={() =>
 						window.open(
 							"https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
